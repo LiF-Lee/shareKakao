@@ -6,13 +6,13 @@
 > > * English
 > > 1. Save 'share.js' in your phone.
 > > 2. Copy 'share.js'.
-> > 3. Find 'modules' folder in project folder.
+> > 3. Find 'modules' folder in your project.
 > > 4. Open and paste 'share.js'.
 >
 > > * Korean
 > > 1. 'share.js' 파일을 내 휴대폰에 저장합니다.
 > > 2. 'share.js' 파일을 복사한후.
-> > 3. 프로젝트 폴더 안에 있는 'modules' 폴더를 찾으세요.
+> > 3. 내 프로젝트 안에 있는 'modules' 폴더를 찾으세요.
 > > 4. 폴더를 열고 아까 복사한 'share.js' 파일을 붙여넣으세요.
 
 # Warning
