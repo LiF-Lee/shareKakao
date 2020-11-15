@@ -2,6 +2,10 @@
 
 ![Alt text](0BBF7F9C-07AF-4092-87B7-AA727E2347FB.jpeg)
 
+# info
+* [Ko] 카카오톡 공유하기 모듈
+* [En] Kakao Share Module
+
 > # How to Apply Module
 > > * English
 > > 1. Save 'share.js' in your phone.
