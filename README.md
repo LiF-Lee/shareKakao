@@ -6,12 +6,11 @@
 
 
 > # Example
-> * 선언
 > ```
 > const shareKakao = require("share");
 > const Kakao = new shareKakao();
 > ```
-> * App Package Setting
-> ```
-> Kakao.package("com.kakao.tall");
-> ```
+> > * App Package Setting
+> > ```
+> > Kakao.package("com.kakao.tall");
+> > ```
