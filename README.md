@@ -17,11 +17,11 @@
 > 
 > > * Share Simple Text
 > >    ``` javascript
-> > Kakao.share("chat_id", {
-> >     "type": 1,
-> >     "message": "example",
-> >     "attachment": {}
-> > });
+> >    Kakao.share("chat_id", {
+> >        "type": 1,
+> >        "message": "example",
+> >        "attachment": {}
+> >    });
 > >    ```
 > 
 > > * Share Shout Text
