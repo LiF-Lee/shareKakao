@@ -9,5 +9,7 @@
 ```
 const shareKakao = require("share");
 const Kakao = new shareKakao();
+```
+```
 Kakao.package("com.kakao.tall");
 ```
