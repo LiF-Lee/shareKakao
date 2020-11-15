@@ -9,7 +9,7 @@
 > const Kakao = new shareKakao();
 > Kakao.package("com.kakao.tall");
 > ```
-> ㅤ
+> 
 > > * Share Simple Text
 > > ``` javascript
 > > Kakao.share("chat_id", {
@@ -18,7 +18,7 @@
 > >     "attachment": {}
 > > });
 > > ```
-> ㅤ
+> 
 > > * Share Shout Text
 > > ``` javascript
 > > Kakao.share("chat_id", {
