@@ -16,12 +16,12 @@
 > ```
 > 
 > > * Share Simple Text
-> >    ``` javascript
-> >    Kakao.share("chat_id", {
-> >        "type": 1,
-> >        "message": "example",
-> >        "attachment": {}
-> >    });
+> > ``` javascript
+> > Kakao.share("chat_id", {
+> >     "type": 1,
+> >     "message": "example",
+> >     "attachment": {}
+> > });
 > >    ```
 > 
 > > * Share Shout Text
@@ -31,6 +31,20 @@
 > >     "message": "example",
 > >     "attachment": {
 > >         "shout": true
+> >     }
+> > });
+> > ```
+>
+> > * Share Simple Image
+> > ``` javascript
+> > Kakao.share("chat_id", {
+> >     "type": 2,
+> >     "message": "사진",
+> >     "attachment": {
+> >         "type": "image/jpeg",
+> >         "w": 210,
+> >         "h": 210,
+> >         "path": "talkm/oXZBbblXG5/6VjK4Jl8OgLCiEfoFLS9V0/i_g9kyvd2sw3il.jpeg",
 > >     }
 > > });
 > > ```
