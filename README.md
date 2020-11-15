@@ -10,7 +10,6 @@
 > Kakao.package("com.kakao.tall");
 > ```
 > ㅤ
-> ㅤ
 > > * Share Simple Text
 > > ``` javascript
 > > Kakao.share("chat_id", {
@@ -19,7 +18,6 @@
 > >     "attachment": {}
 > > });
 > > ```
-> ㅤ
 > ㅤ
 > > * Share Shout Text
 > > ``` javascript
