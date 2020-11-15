@@ -18,10 +18,10 @@
 > > * Simple Text Send
 > > ```
 > > Kakao.share("00000000", {
-    "type": 1,
-    "message": "example",
-    "attachment": {
-        "shout":true
-    }
-});
+> >     "type": 1,
+> >     "message": "example",
+> >     "attachment": {
+> >         "shout":true
+> >     }
+> > });
 > > ```
