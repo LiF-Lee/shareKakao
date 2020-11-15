@@ -10,8 +10,9 @@
 > Kakao.package("com.kakao.tall");
 > ```
 >
+> h
 >
-> > * Simple Text Share
+> > * Share Simple Text
 > > ``` javascript
 > > Kakao.share("chat_id", {
 > >     "type": 1,
@@ -20,8 +21,9 @@
 > > });
 > > ```
 >
+> h
 >
-> > * Shout Text Share
+> > * Share Shout Text
 > > ``` javascript
 > > Kakao.share("chat_id", {
 > >     "type": 1,
