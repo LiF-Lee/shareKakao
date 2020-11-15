@@ -2,6 +2,19 @@
 
 ![Alt text](0BBF7F9C-07AF-4092-87B7-AA727E2347FB.jpeg)
 
+> # How to Apply Module
+> > * English
+> > 1. Save 'share.js' in your phone.
+> > 2. Copy 'share.js'.
+> > 3. Find 'modules' folder in project folder.
+> > 4. Open and paste it.
+>
+> > * Korean
+> > 1. 'share.js' 파일을 내 휴대폰에 저장합니다.
+> > 2. 'share.js' 파일을 복사한후.
+> > 3. 프로젝트 폴더 안에 있는 'modules' 폴더를 찾습니다.
+> > 4. 폴더를 열고 붙여 넣으세요.
+
 # Warning
 해당 모듈을 사용 시 얻는 모든 불이익은
 모듈을 사용한 본인에게 있다는 점 알려드립니다.
