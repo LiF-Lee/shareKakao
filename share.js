@@ -1,23 +1,5 @@
 "use strict";
 module.exports = function() {
-    /**
-     * shareKakao Module for Rhino JS.
-     * [!] 해당 모듈을 사용 시 얻는 모든 
-     *     불이익은 사용자의 책임입니다.
-     * 
-     * @example
-     * const shareKakao = require("share");
-     * const Kakao = new shareKakao();
-     * Kakao.package("com.kakao.tall");
-     * 
-     * Kakao.share("00000000", {
-     *    "type": 1,
-     *    "message": "example",
-     *    "attachment": {
-     *        "shout":true
-     *    }
-     * });
-     */
     function t() {
         this.h = {
             ct: "application/x-www-form-urlencoded",
