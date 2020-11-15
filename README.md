@@ -36,8 +36,12 @@
 > > ```
 >
 > # Available Types
-> > * 1  -  Text
->
-> > * 2  -  Picture
->
-> > * 3  -  Video
+> ``` javascript
+> {
+>     types: {
+>         1: "text",
+>         2: "image",
+>         3: "video"
+>     }
+> }
+> ```
