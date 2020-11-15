@@ -9,12 +9,12 @@
 > const Kakao = new shareKakao();
 > ```
 > > * App Package Setting
-> > ```
+> > ``` javascript
 > > Kakao.package("com.kakao.tall");
 > > ```
 >
 > > * Simple Text Send
-> > ```
+> > ``` javascript
 > > Kakao.share("{chat_id}", {
 > >     "type": 1,
 > >     "message": "example",
