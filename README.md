@@ -38,10 +38,10 @@
 > # Available Types
 > ``` javascript
 > {
->     types: {
->         1: "text",
->         2: "image",
->         3: "video"
->     }
+>     1: "text",
+>     2: "image",
+>     3: "video",
+>     16: "map",
+>     18: "file"
 > }
 > ```
