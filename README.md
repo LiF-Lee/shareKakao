@@ -43,7 +43,7 @@
 > >         "type": "image/jpeg",
 > >         "w": 210,
 > >         "h": 210,
-> >         "path": "talkm/oXZBbblXG5/6VjK4Jl8OgLCiEfoFLS9V0/i_g9kyvd2sw3il.jpeg",
+> >         "path": "talkm/oXZBbblXG5/6VjK4Jl8OgLCiEfoFLS9V0/i_g9kyvd2sw3il.jpeg"
 > >     }
 > > });
 > > ```
