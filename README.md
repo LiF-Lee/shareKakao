@@ -10,7 +10,7 @@
 > Kakao.package("com.kakao.tall");
 > ```
 >
-> h
+> 
 >
 > > * Share Simple Text
 > > ``` javascript
@@ -21,7 +21,7 @@
 > > });
 > > ```
 >
-> h
+> 
 >
 > > * Share Shout Text
 > > ``` javascript
