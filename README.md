@@ -7,11 +7,9 @@
 > ``` javascript
 > const shareKakao = require("share");
 > const Kakao = new shareKakao();
+> Kakao.package("com.kakao.tall");
 > ```
-> > * App Package Setting
-> > ``` javascript
-> > Kakao.package("com.kakao.tall");
-> > ```
+>
 >
 > > * Simple Text Share
 > > ``` javascript
@@ -21,6 +19,7 @@
 > >     "attachment": {}
 > > });
 > > ```
+>
 >
 > > * Shout Text Share
 > > ``` javascript
