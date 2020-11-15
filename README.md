@@ -4,7 +4,7 @@
 
 
 > # Example
-> ```
+> ``` javascript
 > const shareKakao = require("share");
 > const Kakao = new shareKakao();
 > ```
@@ -15,11 +15,9 @@
 >
 > > * Simple Text Send
 > > ``` javascript
-> > Kakao.share("{chat_id}", {
+> > Kakao.share("chat_id", {
 > >     "type": 1,
 > >     "message": "example",
-> >     "attachment": {
-> >         "shout":true
-> >     }
+> >     "attachment": {}
 > > });
 > > ```
