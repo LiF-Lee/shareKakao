@@ -6,6 +6,8 @@
 # Warning
 해당 모듈을 사용 시 얻는 모든 불이익은 사용자의 책임입니다.
 
+
+
 > # Example
 > ``` javascript
 > const shareKakao = require("share");
