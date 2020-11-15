@@ -17,7 +17,7 @@
 >
 > > * Simple Text Send
 > > ```
-> > Kakao.share("00000000", {
+> > Kakao.share("{chat_id}", {
 > >     "type": 1,
 > >     "message": "example",
 > >     "attachment": {
