@@ -13,11 +13,22 @@
 > > Kakao.package("com.kakao.tall");
 > > ```
 >
-> > * Simple Text Send
+> > * Simple Text Share
 > > ``` javascript
 > > Kakao.share("chat_id", {
 > >     "type": 1,
 > >     "message": "example",
 > >     "attachment": {}
+> > });
+> > ```
+>
+> > * Shout Text Share
+> > ``` javascript
+> > Kakao.share("chat_id", {
+> >     "type": 1,
+> >     "message": "example",
+> >     "attachment": {
+> >         "shout": true
+> >     }
 > > });
 > > ```
