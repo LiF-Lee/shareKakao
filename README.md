@@ -35,5 +35,9 @@
 > > });
 > > ```
 >
-> # Available Type
-> > * gg
+> # Available Types
+> > * 1  -  Text
+>
+> > * 2  -  Picture
+>
+> > * 3  -  Video
