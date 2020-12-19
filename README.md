@@ -11,7 +11,7 @@
 
 > # Example
 > ``` javascript
-> const shareKakao = require("share");
+> const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
 > Kakao.package("com.kakao.tall");
 > ```
@@ -33,6 +33,23 @@
 > >     "attachment": {
 > >         "shout": true
 > >     }
+> > });
+> > ```
+>
+> > * Share Mention Text
+> > ``` javascript
+> > Kakao.share("chat_id", {
+> >    "type": 1,
+> >    "message": "@EliF -3-",
+> >    "attachment": {
+> >        "mentions": [
+> >            {
+> >            "at": [1],
+> >            "len": 8,
+> >            "user_id": "user_id"
+> >          }
+> >       ]
+> >    }
 > > });
 > > ```
 >
