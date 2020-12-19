@@ -39,17 +39,15 @@
 > > * Share Mention Text
 > > ``` javascript
 > > Kakao.share("chat_id", {
-> >    "type": 1,
-> >    "message": "@EliF -3-",
-> >    "attachment": {
-> >        "mentions": [
-> >            {
-> >            "at": [1],
-> >            "len": 8,
-> >            "user_id": "user_id"
-> >          }
-> >       ]
-> >    }
+> >     "type": 1,
+> >     "message": "@EliF -3-",
+> >     "attachment": {
+> >         "mentions": [{
+> >             "at": [1],
+> >             "len": 8,
+> >             "user_id": "user_id"
+> >         }]
+> >     }
 > > });
 > > ```
 >
