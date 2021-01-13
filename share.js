@@ -4,8 +4,7 @@ module.exports = function() {
     function t() {
         this.h = {
             ct: "application/x-www-form-urlencoded",
-            al: "ko-kr",
-            ua: "KakaoTalk Share Extension/9.0.4"
+            ua: "KakaoTalk Share Extension/9.1.7"
         }, this.pa = null, this.k = {
             0: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"],
             1: [10, 2, 3, -4, 20, 73, 47, -38, 27, -22, 11, -20, -22, 37, 36, 54],
@@ -43,15 +42,13 @@ module.exports = function() {
         return new java.lang.String(t)
     }, t.prototype.share = function(t, e) {
         return org.jsoup.Jsoup.connect("https://talk-shareex.kakao.com/authWrite")
-        .header("Content-Type", this.h.ct)
-        .header("Accept-Language", this.h.al)
-        .userAgent(this.h.ua)
+        .header("Content-Type", this.h.ct).userAgent(this.h.ua)
         .requestBody("chatLog=" + JSON.stringify({
             type: e.type,
             message: e.message,
             extra: JSON.stringify(e.attachment)
         }) + "&duuid=" + this.gDI() + "&oauthToken=" + this.gOT() + "&target=" + JSON.stringify({
             chatId: t
-        })).method(org.jsoup.Connection.Method.POST).ignoreContentType(!0).ignoreHttpErrors(!0).execute()
+        })).method(org.jsoup.Connection.Method.POST).ignoreContentType(true).ignoreHttpErrors(true).execute()
     }, t
 }();
