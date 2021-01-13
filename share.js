@@ -49,6 +49,7 @@ module.exports = function() {
             extra: JSON.stringify(e.attachment)
         }) + "&duuid=" + this.gDI() + "&oauthToken=" + this.gOT() + "&target=" + JSON.stringify({
             chatId: t
-        })).method(org.jsoup.Connection.Method.POST).ignoreContentType(true).ignoreHttpErrors(true).execute()
+        })).ignoreContentType(true).ignoreHttpErrors(true)
+        .method(org.jsoup.Connection.Method.POST).execute()
     }, t
 }();
