@@ -14,7 +14,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.tall");
+> Kakao.package("com.kakao.talk");
 > ```
 > 
 > > * Share Simple Text
