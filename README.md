@@ -3,6 +3,9 @@
 * [Ko] 카카오톡 공유하기 모듈 (for Rhino)
 * [En] Share Kakao Module (for Rhino)
 
+[![Rhino JS](https://img.shields.io/badge/Built%20with-Javacript-informational?logo=javascript)](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino)
+[![License](https://img.shields.io/github/license/EliF-ASeN/shareKakao)](./LICENSE)
+
 ![Alt text](sample/sample1.png)
 ![Alt text](sample/sample2.png)
 
