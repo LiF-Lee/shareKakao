@@ -60,6 +60,20 @@
 >         }]
 >     }
 > });
+>
+> /*
+> Kakao.share("chat_id", { 
+>     "type": 1,
+>     "message": "@", // 1. 닉네임 없이 @.
+>     "attachment": {
+>         "mentions": [{
+>             "at": [1],
+>             "len": 0, // 2. 닉네임 길이를 0.
+>             "user_id": "user_id" // 1, 2번처럼 해두고 user_id만 넣으면 멘션 가능합니다.
+>         }]
+>     }
+> });
+> */
 > ```
 
 > * Share Simple Image
