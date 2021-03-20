@@ -13,12 +13,12 @@ module.exports = function() {
         }, this.p = {
             pu: "hw.perferences.xml",
             at: "authorization.preferences.xml"
-        }, this.d = '<string name="deviceUUID">', this.e = '<string name="encrypted_auth_token">'
+        }, this.d = '<string name="deviceUUID">', this.e = '<string name="encrypted_auth_token">';
     }
     return t.prototype.package = function(t) {
-        this.pa = "data/data/" + t + "/shared_prefs/KakaoTalk."
+        this.pa = "data/data/" + t + "/shared_prefs/KakaoTalk.";
     }, t.prototype.r = function(t) {
-        return FileStream.read(t)
+        return FileStream.read(t);
     }, t.prototype.gDI = function() {
         let t = java.security.MessageDigest.getInstance("SHA");
         t.reset(), t.update(this.j(this.k[3] + this.r(this.pa + this.p.pu).split(this.d)[1].split("</string>")[0]).getBytes());
@@ -27,9 +27,9 @@ module.exports = function() {
             n = this.k[0];
         for (let t = 0; t < e.length; t++) {
             let s = e[t];
-            a.append(n[(240 & s) >> 4]), a.append(n[15 & s])
+            a.append(n[(240 & s) >> 4]), a.append(n[15 & s]);
         }
-        return a.toString()
+        return a.toString();
     }, t.prototype.gOT = function() {
         let t = this.r(this.pa + this.p.at).split(this.e)[1].split("</string>")[0],
             e = new javax.crypto.Cipher.getInstance("AES/CBC/PKCS5PADDING"),
@@ -37,11 +37,11 @@ module.exports = function() {
             n = new javax.crypto.spec.IvParameterSpec(this.k[1]);
         e.init(2, a, n);
         let s = this.j(e.doFinal(android.util.Base64.decode(t, 0)), "UTF-8");
-        return JSON.parse(s).access_token
+        return JSON.parse(s).access_token;
     }, t.prototype.j = function(t) {
-        return new java.lang.String(t)
+        return new java.lang.String(t);
     }, t.prototype.share = function(t, e) {
-        return org.jsoup.Jsoup.connect("https://talk-shareex.kakao.com/authWrite")
+        const response = org.jsoup.Jsoup.connect("https://talk-shareex.kakao.com/authWrite")
         .header("Content-Type", this.h.ct).userAgent(this.h.ua)
         .requestBody("chatLog=" + JSON.stringify({
             type: e.type,
@@ -50,6 +50,7 @@ module.exports = function() {
         }) + "&duuid=" + this.gDI() + "&oauthToken=" + this.gOT() + "&target=" + JSON.stringify({
             chatId: t
         })).ignoreContentType(true).ignoreHttpErrors(true)
-        .method(org.jsoup.Connection.Method.POST).execute().body()
-    }, t
+        .method(org.jsoup.Connection.Method.POST).execute();
+        return (response.statusCode() === 200) ? response.body() : "ERROR";
+    }, t;
 }();
