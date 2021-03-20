@@ -6,7 +6,7 @@
 [![JavaScript](https://img.shields.io/badge/Built%20with-Javacript-informational?logo=javascript)](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino)
 [![License](https://img.shields.io/github/license/EliF-ASeN/shareKakao)](./LICENSE)
 
-- 2021/03/21 (작동 확인)
+> 2021/03/21 (정상 작동)
 
 ![Alt text](sample/sample1.png)
 ![Alt text](sample/sample2.png)
