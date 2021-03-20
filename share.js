@@ -50,6 +50,6 @@ module.exports = function() {
         }) + "&duuid=" + this.gDI() + "&oauthToken=" + this.gOT() + "&target=" + JSON.stringify({
             chatId: t
         })).ignoreContentType(true).ignoreHttpErrors(true)
-        .method(org.jsoup.Connection.Method.POST).execute()
+        .method(org.jsoup.Connection.Method.POST).execute().body()
     }, t
 }();
