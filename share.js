@@ -42,15 +42,15 @@ module.exports = function() {
         return new java.lang.String(t);
     }, t.prototype.share = function(t, e) {
         const response = org.jsoup.Jsoup.connect("https://talk-shareex.kakao.com/authWrite")
-        .header("Content-Type", this.h.ct).userAgent(this.h.ua)
-        .requestBody("chatLog=" + JSON.stringify({
-            type: e.type,
-            message: e.message,
-            extra: JSON.stringify(e.attachment)
-        }) + "&duuid=" + this.gDI() + "&oauthToken=" + this.gOT() + "&target=" + JSON.stringify({
-            chatId: t
-        })).ignoreContentType(true).ignoreHttpErrors(true)
-        .method(org.jsoup.Connection.Method.POST).execute();
+            .header("Content-Type", this.h.ct).userAgent(this.h.ua)
+            .requestBody("chatLog=" + JSON.stringify({
+                type: e.type,
+                message: e.message,
+                extra: JSON.stringify(e.attachment)
+            }) + "&duuid=" + this.gDI() + "&oauthToken=" + this.gOT() + "&target=" + JSON.stringify({
+                chatId: t
+            })).ignoreContentType(true).ignoreHttpErrors(true)
+            .method(org.jsoup.Connection.Method.POST).execute();
         return (response.statusCode() === 200) ? response.body() : "ERROR";
     }, t;
 }();
