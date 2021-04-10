@@ -17,7 +17,7 @@
 
 # Example
 
-> * Share Simple Text
+> * Share Simple Text - [Type: 1]
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
@@ -30,7 +30,7 @@
 > });
 >  ```
  
-> * Share Shout Text
+> * Share Shout Text - [Type: 1]
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
@@ -38,14 +38,14 @@
 >
 > Kakao.share("chat_id", {
 >     "type": 1,
->     "message": "example",
+>     "message": "Example",
 >     "attachment": {
 >         "shout": true
 >     }
 > });
 > ```
 
-> * Share Mention Text
+> * Share Mention Text - [Type: 1]
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
@@ -53,7 +53,7 @@
 >
 > Kakao.share("chat_id", {
 >     "type": 1,
->     "message": "@EliF -3-",
+>     "message": "@Example",
 >     "attachment": {
 >         "mentions": [{
 >             "at": [1],
@@ -78,7 +78,24 @@
 > */
 > ```
 
-> * Share Simple Image
+> * Share Long Text - [Type: 1]
+> ``` javascript
+> const shareKakao = require("share.js");
+> const Kakao = new shareKakao();
+> Kakao.package("com.kakao.talk");
+>
+> Kakao.share("chat_id", {
+>     "type": 1,
+>     "message": "Example", // 미리보기 텍스트.
+>     "attachment": {
+>         "type": "text/plain",
+>         "mt": "text/txt",
+>         "path": "path" /* talkm/bla/bla.txt */
+>     }
+> });
+> ```
+
+> * Share Simple Image - [Type: 2]
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
@@ -91,7 +108,24 @@
 >         "type": "image/jpeg",
 >         "w": 210,
 >         "h": 210,
->         "path": "talkm/oXZBbblXG5/6VjK4Jl8OgLCiEfoFLS9V0/i_g9kyvd2sw3il.jpeg"
+>         "path": "path" /* talkm/bla/bla.jpeg */
+>     }
+> });
+> ```
+
+> * Share Simple File - [Type: 18]
+> ``` javascript
+> const shareKakao = require("share.js");
+> const Kakao = new shareKakao();
+> Kakao.package("com.kakao.talk");
+>
+> Kakao.share("chat_id", {
+>     "type": 18,
+>     "message": "Example",
+>     "attachment": {
+>         "name": "bla.zip", // 확장자 입력 필수.
+>         "size": 1572864, // 바이트 기준, 1572864 입력시 출력 -> 1.5 MB
+>         "path": "path" /* talkf/bla/bla.zip */
 >     }
 > });
 > ```
@@ -99,10 +133,10 @@
 # Available Types
 > ``` javascript
 > {
->     1: "text",
->     2: "image",
->     3: "video",
->     16: "map",
->     18: "file"
+>     "text": 1,
+>     "image": 2,
+>     "video": 3,
+>     "map": 16,
+>     "file": 18
 > }
 > ```
