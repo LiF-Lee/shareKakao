@@ -1,5 +1,7 @@
 # shareKakao
 
+> #검색 추가 예정...
+
 * [Ko] 카카오톡 공유하기 모듈 (for Rhino)
 * [En] Share Kakao Module (for Rhino)
 
