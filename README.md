@@ -6,16 +6,18 @@
 [![JavaScript](https://img.shields.io/badge/Built%20with-Javacript-informational?logo=javascript)](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino)
 [![License](https://img.shields.io/github/license/EliF-ASeN/shareKakao)](./LICENSE)
 
-> 2021/04/10 (정상 작동)
+> 2021/04/12 (정상 작동)
 
-![Alt text](sample/sample1.png)
-![Alt text](sample/sample2.png)
+
 
 
 # Warning
 해당 모듈을 사용하여 얻는 모든 불이익에 대해 아무런 책임을 지지 않습니다.
 
-# Example
+![Alt text](sample/sample1.png)
+![Alt text](sample/sample2.png)
+
+# Example - Kakao.share()
 
 > * Share Simple Text - [Type: 1]
 > ``` javascript
@@ -130,7 +132,7 @@
 > });
 > ```
 
-# Available Types
+# Available Types - Kakao.share()
 > ``` javascript
 > {
 >     "text": 1,
@@ -139,4 +141,77 @@
 >     "map": 16,
 >     "file": 18
 > }
+> ```
+
+![Alt text](sample/sample3.jpg)
+![Alt text](sample/sample4.jpg)
+
+# Example - Kakao.shareSharp()
+
+> * Share Sharp Search - [Type: list]
+> ``` javascript
+> const shareKakao = require("share.js");
+> const Kakao = new shareKakao();
+> Kakao.package("com.kakao.talk");
+> Kakao.myUserId("myUserId");
+>
+> Kakao.shareSharp("chat_id", {
+>     "type": "list",
+>     "query": "Example",
+>     "web_url": "",
+>     "object": {
+>         "content": [
+>             {
+>                 "title": "ㅇㅅㅇ",
+>                 "description": "...",
+>                 "web_url": ""
+>             }
+>         ],
+>         "button": [
+>             {
+>                 "title": "ABC",
+>                 "web_url": ""
+>             },
+>             {
+>                 "title": "DEF",
+>                 "web_url": ""
+>             }
+>         ]
+>     }
+> });
+>  ```
+
+> * Share Sharp Search - [Type: image]
+> ``` javascript
+> const shareKakao = require("share.js");
+> const Kakao = new shareKakao();
+> Kakao.package("com.kakao.talk");
+> Kakao.myUserId("myUserId");
+> 
+> Kakao.shareSharp("chat_id", {
+>     "type": "image",
+>     "query": "Example",
+>     "web_url": "",
+>     "object": {
+>         "content": [
+>             {
+>                 "image_url": "http://blabla.com/abc.jpg",
+>                 "width": "500",
+>                 "height": "400",
+>                 "web_url": ""
+>             }
+>         ],
+>         "button": []
+>     }
+> });
+>  ```
+
+# Available Types - Kakao.shareSharp()
+> ``` javascript
+> [
+>     "feed",
+>     "list",
+>     "image",
+>     "media"
+> ]
 > ```
