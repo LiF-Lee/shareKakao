@@ -1,6 +1,6 @@
 # shareKakao
 
-> #검색 추가 예정...
+> 샵검색 추가 예정...
 
 * [Ko] 카카오톡 공유하기 모듈 (for Rhino)
 * [En] Share Kakao Module (for Rhino)
@@ -17,7 +17,7 @@
 # Warning
 해당 모듈을 사용하여 얻는 모든 불이익에 대해 아무런 책임을 지지 않습니다.
 
-# Example
+# Example - Kakao.share()
 
 > * Share Simple Text - [Type: 1]
 > ``` javascript
@@ -142,3 +142,63 @@
 >     "file": 18
 > }
 > ```
+
+# Example - Kakao.shareSharp()
+
+> * Share Sharp Search - [Type: list]
+> ``` javascript
+> const shareKakao = require("share.js");
+> const Kakao = new shareKakao();
+> Kakao.package("com.kakao.talk");
+> Kakao.myUserId("myUserId");
+>
+> Kakao.shareSharp("chat_id", {
+>     "type": "list",
+>     "query": "Example",
+>     "web_url": "",
+>     "object": {
+>         "content": [
+>             {
+>                 "title": "ㅇㅅㅇ",
+>                 "description": "...",
+>                 "web_url": ""
+>             }
+>         ],
+>         "button": [
+>             {
+>                 "title": "ABC",
+>                 "web_url": ""
+>             },
+>             {
+>                 "title": "DEF",
+>                 "web_url": ""
+>             }
+>         ]
+>     }
+> });
+>  ```
+
+> * Share Sharp Search - [Type: image]
+> ``` javascript
+> const shareKakao = require("share.js");
+> const Kakao = new shareKakao();
+> Kakao.package("com.kakao.talk");
+> Kakao.myUserId("myUserId");
+> 
+> Kakao.shareSharp("chat_id", {
+>     "type": "image",
+>     "query": "Example",
+>     "web_url": "",
+>     "object": {
+>         "content": [
+>             {
+>                 "image_url": "http://blabla.com/abc.jpg",
+>                 "width": "500",
+>                 "height": "400",
+>                 "web_url": ""
+>             }
+>         ],
+>         "button": []
+>     }
+> });
+>  ```
