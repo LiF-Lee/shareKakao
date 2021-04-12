@@ -132,7 +132,7 @@
 > });
 > ```
 
-# Available Types
+# Available Types - Kakao.share()
 > ``` javascript
 > {
 >     "text": 1,
@@ -202,3 +202,13 @@
 >     }
 > });
 >  ```
+
+# Available Types - Kakao.shareSharp()
+> ``` javascript
+> [
+>     "feed",
+>     "list",
+>     "image",
+>     "media"
+> ]
+> ```
