@@ -143,8 +143,8 @@
 > }
 > ```
 
-![Alt text](sample/sample3.jpg)
-![Alt text](sample/sample4.jpg)
+![Alt text](sample/sample3.JPG)
+![Alt text](sample/sample4.JPG)
 
 # Example - Kakao.shareSharp()
 
