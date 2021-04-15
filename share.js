@@ -1,6 +1,6 @@
 "use strict";
 module.exports = function() {
-    /* https://github.com/EliF-ASeN/shareKakao */
+    /* https://github.com/EliF-Lee/shareKakao */
     function t() {
         this.h = {
             ct: "application/x-www-form-urlencoded",
