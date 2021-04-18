@@ -13,12 +13,12 @@
 # Warning
 해당 모듈을 사용하여 얻는 모든 불이익에 대해 아무런 책임을 지지 않습니다.
 
-![Alt text](sample/sample1.png)
-![Alt text](sample/sample2.png)
-
 * * *
 
 # Example - Kakao.share()
+
+![Alt text](sample/sample1.png)
+![Alt text](sample/sample2.png)
 
 > * Share Simple Text - [Type: 1]
 > ``` javascript
@@ -147,10 +147,10 @@
 
 * * *
 
+# Example - Kakao.shareSharp()
+
 ![Alt text](sample/sample3.JPG)
 ![Alt text](sample/sample4.JPG)
-
-# Example - Kakao.shareSharp()
 
 > * Share Sharp Search - [Type: list]
 > ``` javascript
