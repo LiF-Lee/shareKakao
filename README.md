@@ -6,16 +6,17 @@
 [![JavaScript](https://img.shields.io/badge/Built%20with-Javacript-informational?logo=javascript)](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino)
 [![License](https://img.shields.io/github/license/EliF-ASeN/shareKakao)](./LICENSE)
 
-> 2021/04/12 (정상 작동)
+> 2021/04/18 `정상 작동`
 
-
-
+* * *
 
 # Warning
 해당 모듈을 사용하여 얻는 모든 불이익에 대해 아무런 책임을 지지 않습니다.
 
 ![Alt text](sample/sample1.png)
 ![Alt text](sample/sample2.png)
+
+* * *
 
 # Example - Kakao.share()
 
@@ -138,10 +139,13 @@
 >     "text": 1,
 >     "image": 2,
 >     "video": 3,
+>     "audio": 5,
 >     "map": 16,
 >     "file": 18
 > }
 > ```
+
+* * *
 
 ![Alt text](sample/sample3.JPG)
 ![Alt text](sample/sample4.JPG)
