@@ -12,6 +12,11 @@
 # Warning
 해당 모듈을 사용하여 얻는 모든 불이익에 대해 아무런 책임을 지지 않습니다.
 
+`오픈소스 라이선스`   
+> **KakaoAuthCracker**   
+>     *[Github](https://github.com/junhyukso/KakaoAuthCracker)*   
+>     *Copyright 2020 supersunkist*     
+>     *MIT License*
 
 # Example - Kakao.share()
 
