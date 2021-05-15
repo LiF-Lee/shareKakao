@@ -6,7 +6,7 @@
 [![JavaScript](https://img.shields.io/badge/Built%20with-Javacript-informational?logo=javascript)](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino)
 [![License](https://img.shields.io/github/license/EliF-Lee/shareKakao)](./LICENSE)
 
-> 2021/05/08 `정상 작동`
+> 2021/05/15 `정상 작동`
 
 
 # Warning
