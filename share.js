@@ -12,9 +12,9 @@ module.exports = function() {
             pu: "hw.perferences.xml", at: "authorization.preferences.xml"
         }, this.d = '<string name="deviceUUID">', this.e = '<string name="encrypted_auth_token">';
     }
-    return t.prototype.package = function(t) {
+    return t.prototype.setPackage = function(t) {
         this.pa = "data/data/" + t + "/shared_prefs/KakaoTalk.";
-    }, t.prototype.myUserId = function(i) {
+    }, t.prototype.setUserId = function(i) {
         this.mi = i;
     }, t.prototype.auth = function() {
         return this.gOT() + "-" + this.gDI();
