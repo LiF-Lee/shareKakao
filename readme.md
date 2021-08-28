@@ -29,7 +29,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
 >     type: 1,
@@ -42,7 +42,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
 >     type: 1,
@@ -57,7 +57,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
 >     type: 1,
@@ -90,7 +90,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
 >     type: 1,
@@ -107,7 +107,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
 >     type: 2,
@@ -125,7 +125,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
 >     type: 18,
@@ -161,8 +161,8 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
-> Kakao.myUserId("myUserId");
+> Kakao.setPackage("com.kakao.talk");
+> Kakao.setUserId("myUserId");
 >
 > Kakao.shareSharp("chat_id", {
 >     type: "list",
@@ -194,8 +194,8 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
-> Kakao.myUserId("myUserId");
+> Kakao.setPackage("com.kakao.talk");
+> Kakao.setUserId("myUserId");
 > 
 > Kakao.shareSharp("chat_id", {
 >     type: "image",
@@ -216,7 +216,7 @@
 >  ```
 
 # Available Types - Kakao.shareSharp()
-> ``` javascript
+> ``` json
 > [
 >     "feed",
 >     "list",
