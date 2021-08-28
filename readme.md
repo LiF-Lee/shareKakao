@@ -139,7 +139,7 @@
 > ```
 
 # Available Types - Kakao.share()
-> ``` javascript
+> ``` json
 > {
 >     "text": 1,
 >     "image": 2,
