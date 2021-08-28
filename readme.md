@@ -29,12 +29,12 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
->     "type": 1,
->     "message": "example",
->     "attachment": {}
+>     type: 1,
+>     message: "example",
+>     attachment: {}
 > });
 >  ```
  
@@ -42,13 +42,13 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
->     "type": 1,
->     "message": "Example",
->     "attachment": {
->         "shout": true
+>     type: 1,
+>     message: "Example",
+>     attachment: {
+>         shout: true
 >     }
 > });
 > ```
@@ -57,29 +57,29 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
->     "type": 1,
->     "message": "@Example",
->     "attachment": {
->         "mentions": [{
->             "at": [1],
->             "len": 8,
->             "user_id": "user_id"
+>     type: 1,
+>     message: "@Example",
+>     attachment: {
+>         mentions: [{
+>             at: [1],
+>             len: 8,
+>             user_id: "user_id"
 >         }]
 >     }
 > });
 >
 > /*
 > Kakao.share("chat_id", { 
->     "type": 1,
->     "message": "@", // 1. 닉네임 없이 @.
->     "attachment": {
->         "mentions": [{
->             "at": [1],
->             "len": 0, // 2. 닉네임 길이를 0.
->             "user_id": "user_id" // 1, 2번처럼 해두고 user_id만 넣으면 멘션 가능합니다.
+>     type: 1,
+>     message: "@", // 1. 닉네임 없이 @.
+>     attachment: {
+>         mentions: [{
+>             at: [1],
+>             len: 0, // 2. 닉네임 길이를 0.
+>             user_id: "user_id" // 1, 2번처럼 해두고 user_id만 넣으면 멘션 가능합니다.
 >         }]
 >     }
 > });
@@ -90,15 +90,15 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
->     "type": 1,
->     "message": "Example", // 미리보기 텍스트.
->     "attachment": {
->         "type": "text/plain",
->         "mt": "text/txt",
->         "path": "path" /* talkm/bla/bla.txt */
+>     type: 1,
+>     message: "Example", // 미리보기 텍스트.
+>     attachment: {
+>         type: "text/plain",
+>         mt: "text/txt",
+>         path: "path" /* talkm/bla/bla.txt */
 >     }
 > });
 > ```
@@ -107,16 +107,16 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
->     "type": 2,
->     "message": "사진",
->     "attachment": {
->         "type": "image/jpeg",
->         "w": 210,
->         "h": 210,
->         "path": "path" /* talkm/bla/bla.jpeg */
+>     type: 2,
+>     message: "사진",
+>     attachment: {
+>         type: "image/jpeg",
+>         w: 210,
+>         h: 210,
+>         path: "path" /* talkm/bla/bla.jpeg */
 >     }
 > });
 > ```
@@ -125,21 +125,21 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk");
 >
 > Kakao.share("chat_id", {
->     "type": 18,
->     "message": "Example",
->     "attachment": {
->         "name": "bla.zip", // 확장자 입력 필수.
->         "size": 1572864, // 바이트 기준, 1572864 입력시 출력 -> 1.5 MB
->         "path": "path" /* talkf/bla/bla.zip */
+>     type: 18,
+>     message: "Example",
+>     attachment: {
+>         name: "bla.zip", // 확장자 입력 필수.
+>         size: 1572864, // 바이트 기준, 1572864 입력시 출력 -> 1.5 MB
+>         path: "path" /* talkf/bla/bla.zip */
 >     }
 > });
 > ```
 
 # Available Types - Kakao.share()
-> ``` javascript
+> ``` json
 > {
 >     "text": 1,
 >     "image": 2,
@@ -161,29 +161,29 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
-> Kakao.myUserId("myUserId");
+> Kakao.setPackage("com.kakao.talk");
+> Kakao.setUserId("myUserId");
 >
 > Kakao.shareSharp("chat_id", {
->     "type": "list",
->     "query": "Example",
->     "web_url": "",
->     "object": {
->         "content": [
+>     type: "list",
+>     query: "Example",
+>     web_url: "",
+>     object: {
+>         content: [
 >             {
->                 "title": "ㅇㅅㅇ",
->                 "description": "...",
->                 "web_url": ""
+>                 title: "ㅇㅅㅇ",
+>                 description: "...",
+>                 web_url: ""
 >             }
 >         ],
->         "button": [
+>         button: [
 >             {
->                 "title": "ABC",
->                 "web_url": ""
+>                 title: "ABC",
+>                 web_url: ""
 >             },
 >             {
->                 "title": "DEF",
->                 "web_url": ""
+>                 title: "DEF",
+>                 web_url: ""
 >             }
 >         ]
 >     }
@@ -194,29 +194,29 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.package("com.kakao.talk");
-> Kakao.myUserId("myUserId");
+> Kakao.setPackage("com.kakao.talk");
+> Kakao.setUserId("myUserId");
 > 
 > Kakao.shareSharp("chat_id", {
->     "type": "image",
->     "query": "Example",
->     "web_url": "",
->     "object": {
->         "content": [
+>     type: "image",
+>     query: "Example",
+>     web_url: "",
+>     object: {
+>         content: [
 >             {
->                 "image_url": "http://blabla.com/abc.jpg",
->                 "width": "500",
->                 "height": "400",
->                 "web_url": ""
+>                 image_url: "http://blabla.com/abc.jpg",
+>                 width: "500",
+>                 height: "400",
+>                 web_url: ""
 >             }
 >         ],
->         "button": []
+>         button: []
 >     }
 > });
 >  ```
 
 # Available Types - Kakao.shareSharp()
-> ``` javascript
+> ``` json
 > [
 >     "feed",
 >     "list",
