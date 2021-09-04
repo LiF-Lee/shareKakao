@@ -8,7 +8,7 @@
 
 
 > 2021/06/06 `정상 작동`  
->     카카오톡 버전 `8.9.7` 기준
+>     카카오톡 버전 `9.4.5` 기준
 
 
 # Warning
@@ -29,7 +29,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.setPackage("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk", "KakaoTalkVersion");
 >
 > Kakao.share("chat_id", {
 >     type: 1,
@@ -42,7 +42,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.setPackage("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk", "KakaoTalkVersion");
 >
 > Kakao.share("chat_id", {
 >     type: 1,
@@ -57,7 +57,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.setPackage("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk", "KakaoTalkVersion");
 >
 > Kakao.share("chat_id", {
 >     type: 1,
@@ -90,7 +90,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.setPackage("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk", "KakaoTalkVersion");
 >
 > Kakao.share("chat_id", {
 >     type: 1,
@@ -107,7 +107,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.setPackage("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk", "KakaoTalkVersion");
 >
 > Kakao.share("chat_id", {
 >     type: 2,
@@ -125,7 +125,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.setPackage("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk", "KakaoTalkVersion");
 >
 > Kakao.share("chat_id", {
 >     type: 18,
@@ -161,7 +161,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.setPackage("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk", "KakaoTalkVersion");
 > Kakao.setUserId("myUserId");
 >
 > Kakao.shareSharp("chat_id", {
@@ -194,7 +194,7 @@
 > ``` javascript
 > const shareKakao = require("share.js");
 > const Kakao = new shareKakao();
-> Kakao.setPackage("com.kakao.talk");
+> Kakao.setPackage("com.kakao.talk", "KakaoTalkVersion");
 > Kakao.setUserId("myUserId");
 > 
 > Kakao.shareSharp("chat_id", {

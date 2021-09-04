@@ -10,10 +10,12 @@ module.exports = function() {
             "dkljleskljfeisflssljeif "
         ], this.p = {
             pu: "hw.perferences.xml", at: "authorization.preferences.xml"
-        }, this.d = '<string name="deviceUUID">', this.e = '<string name="encrypted_auth_token">';
+        }, this.d = '<string name="d_id">', this.e = '<string name="encrypted_auth_token">', this.kv = "8.9.7";
     }
-    return t.prototype.setPackage = function(t) {
+    return t.prototype.setPackage = function(t, v) {
         this.pa = "data/data/" + t + "/shared_prefs/KakaoTalk.";
+        this.kv = v;
+        this.d = Number(this.kv.slice(0, 1)) <= 8 ? '<string name="deviceUUID">' : '<string name="d_id">';
     }, t.prototype.setUserId = function(i) {
         this.mi = i;
     }, t.prototype.auth = function() {
@@ -21,14 +23,18 @@ module.exports = function() {
     }, t.prototype.r = function(t) {
         return FileStream.read(t);
     }, t.prototype.gDI = function() {
-        let t = java.security.MessageDigest.getInstance("SHA");
-        t.reset(), t.update(this.j(this.k[3] + this.r(this.pa + this.p.pu).split(this.d)[1].split("</string>")[0]).getBytes());
-        let e = t.digest(), a = new java.lang.StringBuffer, n = this.k[0];
-        for (let t = 0; t < e.length; t++) {
-            let s = e[t];
-            a.append(n[(240 & s) >> 4]), a.append(n[15 & s]);
+        if(Number(this.kv.slice(0, 1)) <= 8) {
+            let t = java.security.MessageDigest.getInstance("SHA");
+            t.reset(), t.update(this.j(this.k[3] + this.r(this.pa + this.p.pu).split(this.d)[1].split("</string>")[0]).getBytes());
+            let e = t.digest(), a = new java.lang.StringBuffer, n = this.k[0];
+            for (let t = 0; t < e.length; t++) {
+                let s = e[t];
+                a.append(n[(240 & s) >> 4]), a.append(n[15 & s]);
+            }
+            return a.toString();
         }
-        return a.toString();
+        let t = this.r(this.pa + this.p.pu).split(this.d)[1].split("</string>")[0];
+        return t;
     }, t.prototype.gOT = function() {
         let t = this.r(this.pa + this.p.at).split(this.e)[1].split("</string>")[0],
             e = new javax.crypto.Cipher.getInstance("AES/CBC/PKCS5PADDING"),
