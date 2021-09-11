@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/github/license/EliF-Lee/shareKakao)](./LICENSE)
 
 
-> 2021/06/06 `정상 작동`  
+> 2021/09/12 `정상 작동`  
 >     카카오톡 버전 `9.4.5` 기준
 
 
