@@ -65,7 +65,7 @@
 >     attachment: {
 >         mentions: [{
 >             at: [1],
->             len: 8,
+>             len: 7,
 >             user_id: "user_id"
 >         }]
 >     }
