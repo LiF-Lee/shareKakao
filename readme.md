@@ -66,12 +66,12 @@
 >         mentions: [{
 >             at: [1],
 >             len: 7,
->             user_id: "user_id"
+>             user_id: user_id // string 형식으로 넣으면 작동하지 않습니다.. (21년 11월 08일 수정)
 >         }]
 >     }
 > });
 >
-> /*
+> /* (10월 달 이후 작동 안됨)
 > Kakao.share("chat_id", { 
 >     type: 1,
 >     message: "@", // 1. 닉네임 없이 @.
