@@ -144,7 +144,7 @@
 >     "text": 1,
 >     "image": 2,
 >     "video": 3,
->     "contact": 4,
+>     "tel": 4,
 >     "audio": 5,
 >     "map": 16,
 >     "file": 18
